@@ -30,3 +30,7 @@ class ReadExcel(object):
 if __name__ == '__main__':
     c = ReadExcel('../testdata/data_xl.xlsx', 'login_sheet')
     d = c.getTestData()
+    l = []
+    for i in d:
+        l.append(i)
+    print(*l)

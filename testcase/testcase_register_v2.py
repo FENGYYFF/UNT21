@@ -9,7 +9,6 @@ from common.read_excel_v2 import ReadExcel
 @ddt
 class TestRegister_V2(unittest.TestCase):
     testdata = ReadExcel("../testdata/data_xl.xlsx", "login_sheet").getTestData()
-
     # testcase01： 成功注册
     @data(*testdata)
     def testLogin(self,testdata):
