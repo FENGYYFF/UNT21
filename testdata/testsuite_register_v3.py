@@ -1,5 +1,5 @@
 import unittest
-from testdata.testcase_register import test_register
+from testcase.testcase_register import test_register
 from common.read_excel import ReadExcel
 
 # 创建一个suite对象

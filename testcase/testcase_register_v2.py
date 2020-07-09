@@ -1,17 +1,22 @@
 import unittest
 from common.loginfuc import register
+from ddt import ddt,data
+from common.read_excel_v2 import ReadExcel
 
+
+
+
+@ddt
 class TestRegister_V2(unittest.TestCase):
-    def __init__(self,method,data,expect):
-        super().__init__(method)
-        self.data = data
-        self.expect = expect
+    testdata = ReadExcel("../testdata/data_xl.xlsx", "login_sheet").getTestData()
+
     # testcase01： 成功注册
-    def testLogin(self):
+    @data(*testdata)
+    def testLogin(self,testdata):
         # 预制数据
-        data = self.data
+        data = eval(testdata.data)
         # 期待结果
-        expect = self.expect
+        expect = eval(testdata.expect)
         # 创建register对象，返回接口response
         response = register(*data)
         try:

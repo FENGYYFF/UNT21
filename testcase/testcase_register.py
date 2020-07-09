@@ -1,3 +1,4 @@
+"""
 import unittest
 from common.loginfuc import register
 
@@ -43,3 +44,4 @@ class test_register(unittest.TestCase):
     #     response = register('py8', 1256, 1256)
     #     self.assertEqual(response, {'code': 0, 'msg': '账号和密码的长度需要在6-18位之间'})
 
+"""

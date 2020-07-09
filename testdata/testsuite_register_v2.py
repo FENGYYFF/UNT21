@@ -1,5 +1,5 @@
 import unittest
-from testdata.testcase_register import test_register
+from testcase.testcase_register import test_register
 import openpyxl
 from openpyxl import load_workbook
 

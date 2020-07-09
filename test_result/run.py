@@ -1,7 +1,7 @@
 # 首先要理解我们要调用的模块是TextTestRunner，但是这是文本的，所以我们用具有UI界面的模块
 import HTMLTestRunnerNew
 # 导入刚刚完成装填的suite
-from testdata.testsuite_register_v4 import suite_register
+from testdata.testsuite_register_v5 import suite_register
 
 # 创建一个文件类对象，读写模式开启
 with open('html_result/test_report.html','wb+') as file:
