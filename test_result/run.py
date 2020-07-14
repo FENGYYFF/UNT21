@@ -13,3 +13,5 @@ with open('html_result/test_report.html','wb+') as file:
     # 让这个对象调用run这个方法从而开始用例执行输出，入参为suite
     runner.run(suite_register)
 
+if __name__ == '__main__':
+    print()
