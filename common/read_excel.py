@@ -12,6 +12,7 @@ class ReadExcel(object):
         # 创建worksheet对象
         sheet = workbook[self.sheetname]  # type: openpyxl.workbook.workbook.Worksheet
         # 获取行
+        
         rows = list(sheet.rows)
         # 创建一个空数据列表
         testdata = []
